@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    /* position: relative; */
+}
+
+span.hide{
+    display: none;
+}
+
+.name {
+    font-family: 'Sora', sans-serif;
+    opacity: 0.9;
+    padding-left: 2%;
+}
+
+ul {
+    display: block;
+    color: white;
+    background-color: black;
+    width: 100%;
+    padding: 20px 0px 20px;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    font-family: 'Albert Sans', sans-serif;
+    opacity: 0.8;
+}
+
+.right-ul {
+    float: right;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+hr {
+    width: 90%;
+    height: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    opacity: 0.5;
+}
+
+h1 {
+    color: white;
+    opacity: .7;
+}
+
+h3 {
+    color: white;
+    opacity: .7;
+}
+
+.if-statement {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.if-state-clause {
+    padding-top: 20px;
+    padding-bottom: 25px;
+    font-size: .8em;
+    text-align: center;
+    font-style: italic;
+}
+
+.development {
+    color: white;
+    padding-left: 20%;
+}
+
+p {
+    padding-top: 50px;
+    padding-left: 5%;
+    padding-right: 8%;
+    color: white;
+    opacity: .7;
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+
+.contact-body {
+    position: relative;
+    height: 900px;
+}
+
+.form-div {
+    position: relative;
+    width: 80%;
+    height: 80%;
+    padding: 10%;
+}
+
+form {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;    
+}
+
+.contact-me {
+    position: relative;
+    text-align: center;
+    margin: 10px;
+}
+
+label {
+    display: block;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    
+}
+
+input {
+    display: block;
+    box-sizing: border-box;
+    background-color: cornsilk;
+    width: 100%;
+    padding: 10px;
+}
+
+
+select { 
+    color: white;
+    box-sizing: content-box;
+}
+
+textarea {
+    color: white;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+}
+
+.email-p {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.email-tag {
+    font-style: italic;
+}
+
+.contact-footer {
+    position: relative;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    height: 10px;
+}
+
+.contact-pfooter {
+    display: inline-block;
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 5%;
+    opacity: .7;
+}
+
+
+
+@media only screen and (min-width: 750px) {
+
+
+
+    span.hide{
+        display: block;
+        font-family: 'Sora', sans-serif;
+        opacity: 0.9;
+        color: #9D0000;
+        padding-left: 7px;
+        }
+    
+
+    }
+
+
+    @media only screen and (min-width: 1100px) {
+
+
+        
+        body {
+            width: 1100px;
+            margin: 0 auto;
+        }
+        
+        
+    }

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anthony Ives</title>
+    {% load static %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300&family=Sora:wght@500&display=swap" rel="stylesheet">
+    
+    <link rel="shortcut icon" type="image/png" href="{% static 'favicon.png' %}">
+    <link rel="stylesheet" href="{% static 'contact.css' %}">
+</head>
+<body class="contact-body">
+    <div class="navbar">
+        <!-- <div class="left-navbar"> -->
+            <ul>
+                <li class="name"><a href="/">Anthony Ives</a></li>
+                <li><span class="hide">Software Developer</span></li>
+                <li class="right-ul"><a href="work">Work</a></li>
+                <li class="right-ul"><a href="about">About</a></li>
+                <li class="right-ul"><a href="/contact">Contact</a></li>
+            </ul>
+        <!-- </div> -->
+    </div>
+    <hr>
+    
+    <div class="form-div">
+
+        {% if first_name %}
+
+        <h1 class="if-statement">Thanks {{ first_name }}! I'll be in touch soon!</h1>
+        <p class="if-statement">Have another question or comment you'd like to add? No worries, shoot me another email..</p>
+        <br><br>
+
+        {% endif %}
+
+        <h1 class="contact-me">Contact Me
+        </h1>
+
+        <form action="/contact" method="POST" novalidate>              
+        <label for="first_name">First Name</label>
+        <input type="text" id="first_name" name="first_name" placeholder="First Name / Company">
+        
+        <label for="last_name">Last Name</label>
+        <input type="text" id="last_name" name="last_name" placeholder="Last Name">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Email" required>
+            
+        <label for="subject">Subject</label>
+        <select id="subject" name="subject">
+        <option selected="true" disabled="disabled">Please Select A Subject</option>
+        <option value="general">General Questions and Comments</option>
+        <option value="freelance_request">Freelance Inquiry</option>
+        <option value="employment">Professional Employment Inquiry</option>
+        </select>
+            
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+            
+        <input class="submit" type="submit" value="Submit">
+        {% csrf_token %}
+
+        <p class="email-p">Email: <a href="mailto:anthonyives01@gmail.com" class="email-tag">anthonyives01@gmail.com</a></p>
+        
+        </form>
+
+    </div>
+        <br>
+        
+    
+    
+
+    <footer class="contact-footer">
+        <p class="contact-pfooter"><a href="https://www.linkedin.com/in/anthony-ives-305237103/">LINKEDIN</a></p>
+        <p class="contact-pfooter"><a href="contact">CONTACT</a></p>
+    </footer>
+</body>
