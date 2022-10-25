@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    /* position: relative; */
+}
+
+span.hide{
+    display: none;
+}
+
+.name {
+    font-family: 'Sora', sans-serif;
+    opacity: 0.9;
+    padding-left: 2%;
+}
+
+ul {
+    display: block;
+    color: white;
+    background-color: black;
+    width: 100%;
+    padding: 20px 0px 20px;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    font-family: 'Albert Sans', sans-serif;
+    opacity: 0.8;
+}
+
+.right-ul {
+    float: right;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+hr {
+    width: 90%;
+    height: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    opacity: 0.5;
+}
+
+.body {
+    height: 700px;
+    padding: 10px;
+}
+
+h1 {
+    color: white;
+    opacity: .7;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h3 {
+    color: white;
+    opacity: .7;
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+p {
+    padding-top: 50px;
+    padding-left: 5%;
+    padding-right: 8%;
+    color: white;
+    opacity: .7;
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+
+
+.contact-footer {
+    position: relative;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    height: 10px;
+}
+
+.contact-pfooter {
+    display: inline-block;
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 5%;
+    opacity: .7;
+}
+
+
+
+@media only screen and (min-width: 750px) {
+
+
+
+    span.hide{
+        display: block;
+        font-family: 'Sora', sans-serif;
+        opacity: 0.9;
+        color: #9D0000;
+        padding-left: 7px;
+        }
+
+    
+    h1 {
+        padding-top: 200px;
+        }
+    
+
+    }
+
+
+    @media only screen and (min-width: 1100px) {
+
+
+        
+        body {
+            width: 1100px;
+            margin: 0 auto;
+        }
+        
+        
+    }

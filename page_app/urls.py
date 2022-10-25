@@ -7,4 +7,5 @@ urlpatterns = [
     path('work', views.work),
     path('about', views.about),
     path('coming_soon', views.coming_soon),
-]
+    path('submission', views.submission),
+] 
